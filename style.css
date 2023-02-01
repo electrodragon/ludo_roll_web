@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background: khaki;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.root .ludo-game, .root .ludo-rail {
+  height: 100%;
+}
+.root .ludo-game {
+  flex: 1;
+  background: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.root .ludo-game .dices {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.root .ludo-game .roll-button {
+  background: blue;
+  width: 140px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DejaVu Sans Mono", serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50px;
+}
+.root .ludo-game .roll-button:hover {
+  cursor: pointer;
+  background: yellowgreen;
+}
+.root .ludo-rail {
+  background: yellowgreen;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .ludo-rail .rail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.root .ludo-rail .rail .ludo-block {
+  background: white;
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Hack, serif;
+}
+.root .ludo-rail .rail .block_7 {
+  background: aqua;
+}
+
+/*# sourceMappingURL=style.css.map */

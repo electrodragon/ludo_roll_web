@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background: khaki;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .ludo-game, .ludo-rail {
+    height: 100%;
+  }
+
+  .ludo-game {
+    flex: 1;
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .dices {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .roll-button {
+      background: blue;
+      width: 140px;
+      height: 50px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "DejaVu Sans Mono", serif;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 50px;
+
+      &:hover {
+        cursor: pointer;
+        background: yellowgreen;
+      }
+    }
+
+  }
+
+  .ludo-rail {
+    background: yellowgreen;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rail {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .ludo-block {
+        $blockSize: 35px;
+        background: white;
+        border: 1px solid black;
+        width: $blockSize;
+        height: $blockSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Hack, serif;
+      }
+
+      .block_7 {
+        background: aqua;
+      }
+    }
+
+  }
+
+}
